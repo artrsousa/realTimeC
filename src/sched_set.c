@@ -11,9 +11,9 @@
 /* Listing 35-2 */
 
 #include <sched.h>
-#include "tlpi_hdr.h"
-#include "error_functions.c"
-#include "get_num.c"
+#include "../include/tlpi_hdr.h"
+#include "../include/error_functions.c"
+#include "../include/get_num.c"
 
 int
 main(int argc, char *argv[])

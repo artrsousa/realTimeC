@@ -15,7 +15,7 @@
 #include <string.h>
 #include <limits.h>
 #include <errno.h>
-#include "get_num.h"
+#include "../include/get_num.h"
 
 static void
 gnFail(const char *fname, const char *msg, const char *arg, const char *name)

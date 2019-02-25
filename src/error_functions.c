@@ -11,9 +11,9 @@
 /* Listing 3-3 */
 
 #include <stdarg.h>
-#include "error_functions.h"
-#include "tlpi_hdr.h"
-#include "ename.c.inc"          /* Defines ename and MAX_ENAME */
+#include "../include/error_functions.h"
+#include "../include/tlpi_hdr.h"
+#include "../resources/ename.c.inc"          /* Defines ename and MAX_ENAME */
 
 #ifdef __GNUC__
 __attribute__ ((__noreturn__))

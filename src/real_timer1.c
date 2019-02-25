@@ -6,7 +6,7 @@
 #include <sys/types.h>
 
 //#include "get_num.c"
-#include "tlpi_hdr.h"
+#include "../include/tlpi_hdr.h"
 #include "error_functions.c"
 
 int sigCnt = 0;
@@ -30,9 +30,9 @@ int main() {
 	
 	/* set the time val and interval */
 	
-	itv.it_value.tv_sec     = 2;
+	itv.it_value.tv_sec     = 1;
 	itv.it_value.tv_usec    = 0;
-	itv.it_interval.tv_sec  = 2;
+	itv.it_interval.tv_sec  = 1;
 	itv.it_interval.tv_usec = 0;
 	
 	displayTimes("Starting: ", FALSE);
@@ -58,7 +58,7 @@ int main() {
 }
 
 static void displayTimes(const char *msg, Boolean includeTimer) {
-    struct itimerval itv;
+	struct itimerval itv;
     static struct timeval start;
     struct timeval curr;
     static int callNum = 0;             /* Number of calls to this function */
